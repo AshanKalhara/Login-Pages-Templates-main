@@ -16,12 +16,22 @@
             <h1>LOGIN</h1>
             <form method="POST">
                 <div class="input-field">
-                    <input type="text" name="username" id="username" placeholder="Username"required>
+                    <input type="text" name="username" id="username" placeholder="Username"required autocomplete>
                         <i class='bx bxs-user'></i>
                 </div>
                 <div class="input-field">
-                    <input type="password" name="password" id="password" placeholder="Password" required>
-                        <i class='bx bxs-lock-open-alt'></i>
+                    <input type="password" name="password" id="password" placeholder="Password" required autocomplete>
+                        <i class='bx bxs-lock-alt'></i>
+                </div>
+            </form>
+                <div class="additional-field">
+                    <div class="remember-me">
+                        <input type="checkbox" name="rememberme" id="remember">
+                        <label for="remember" id="rememberme">Remember me</label>
+                    </div>
+                    <div class="forgot-password">
+                        <a href="#">Forgot Password?</a>
+                    </div>
                 </div>
                 <div class="button-field">
                     <button class="login-btn" type="submit">
@@ -31,7 +41,9 @@
                         Cancel
                     </button>
                 </div>
-            </form>
+                <div class="register">
+                    <a href="#">Don't have an account? Register</a>
+                </div>
         </section>
     </main>
 </body>
