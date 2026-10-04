@@ -1,5 +1,5 @@
 :root{
-    --primary-color: darkblue;
+    --primary-color: rgb(1, 1, 37);
     --secondary-color: white;
     --accent-color: lightblue;
     --font-family: 'Libre Caslon Condensed', arial, sans-serif;
@@ -30,8 +30,12 @@ section{
     flex-direction: column;
     align-items: center;
     justify-content:space-between;
-    background-color: var(--secondary-color);
+    background-color: rgba(255, 255, 255, 0.3);
+    border:1px solid rgba(255, 255, 255, 0.97);
     border-radius: var(--bdr-radius1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
 }
 
 section h1{
@@ -103,4 +107,50 @@ input[type="checkbox"]{
 
 input[type="checkbox"]:checked{
     background-color: darkblue;
+}
+
+.forgot a{
+    color: black;
+    text-decoration:none;
+}
+
+.forgot a:hover{
+    color: var(--primary-color);
+}
+
+.forgot a:focus-visible{
+    outline:2px solid var(--primary-color);
+}
+
+.button-field{
+    width:100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+button{
+    font-family: var(--font-family);
+    padding:5px 25px;
+    border:3px solid black;
+    border-radius: var(--bdr-radius2);
+}
+
+button:hover{
+    color: var(--accent-color);
+    background-color: var(--primary-color)
+}
+
+.register a{
+    font-family:var(--font-family);
+    color: black;
+    text-decoration: none;
+}
+
+.register a:hover{
+    color: var(--primary-color);
+}
+
+.register a:focus-visible{
+    outline: 2px solid blue;
 }
